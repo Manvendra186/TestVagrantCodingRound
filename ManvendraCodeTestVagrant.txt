@@ -1,0 +1,2 @@
+1:- Created a separate  package/class for Utility, Driver instantiation.
+2:- Created a separate package/class for a page object model like design pattern to create  object repositor for web elements.
