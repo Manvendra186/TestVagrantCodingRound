@@ -5,7 +5,7 @@ import org.openqa.selenium.*;
 /**
  * This class is a design pattern to create Object Repository for web elements.
  * This class will find the WebElements of that web page and also has
- * Page methods which perform operations on those WebElements.
+ * page methods which perform operations on those WebElements.
  * 
  * @author Manvendra
  *

@@ -1,2 +1,3 @@
 1:- Created a separate  package/class for Utility, Driver instantiation.
-2:- Created a separate package/class for a page object model like design pattern to create  object repositor for web elements.
+2:- Created a separate package/class for a page object model like design pattern to create  object repository for web elements.
+3:- Removed the provided code in the SignInTest class but commented the unnecessary code provided in other test classes.

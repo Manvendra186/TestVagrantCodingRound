@@ -1,19 +1,22 @@
 import com.pom.pages.SignIn;
+import com.utility.Constants;
 import com.utility.DriverInstance;
 import com.utility.Util;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class SignInTest extends DriverInstance {
+public class SignInTest extends DriverInstance implements Constants{
 
 	SignIn signInPomObj = new SignIn(getDriver());
 
-	@Test
-	public void shouldThrowAnErrorIfSignInDetailsAreMissing() {
-
-		getDriver().get("https://www.cleartrip.com/");
+	@BeforeTest
+	public void navigateToClearTrip() {
+		getDriver().get(URL);
 		getDriver().manage().window().maximize();
+	}
+	@Test
+	public void shouldThrowAnErrorIfSignInDetailsAreMissing(){
 
 		Util.waitExplicitlyForElementVisibility(getDriver(), signInPomObj.yourTripWebelement());
 		signInPomObj.clickYourTrip();

@@ -2,15 +2,15 @@ package com.utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
 
 import com.sun.javafx.PlatformUtil;
 
 /**
- * 
+ * This class will instantiate the Driver
  * @author Manvendra
  *
  */
+@SuppressWarnings("restriction")
 public class DriverInstance {
 
 	private WebDriver driver;

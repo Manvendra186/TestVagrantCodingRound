@@ -5,6 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * This class contains the utility methods which we can use anywhere
+ * @author Manvendra
+ *
+ */
 public class Util {
 
 	/**
@@ -21,7 +26,7 @@ public class Util {
 
 	/**
 	 * this is an overloaded {@code waitExplicitlyForElementVisibility} method where you can
-	 * provide the number of seconds to wait before throwing the elementNotVisible
+	 * provide the number of seconds to wait before throwing the ElementNotVisible
 	 * exception
 	 * 
 	 * @param seconds

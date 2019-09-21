@@ -1,14 +1,14 @@
-import com.sun.javafx.PlatformUtil;
+import com.utility.Constants;
 import com.utility.DriverInstance;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class HotelBookingTest extends DriverInstance {
+public class HotelBookingTest extends DriverInstance implements Constants{
 
 	@FindBy(linkText = "Hotels")
 	private WebElement hotelLink;
@@ -22,20 +22,27 @@ public class HotelBookingTest extends DriverInstance {
 	@FindBy(id = "travellersOnhome")
 	private WebElement travellerSelection;
 
+	@BeforeTest
+	public void navigateToClearTrip() {
+		getDriver().get(URL);
+		getDriver().manage().window().maximize();
+	}
 	@Test
 	public void shouldBeAbleToSearchForHotels() {
 		// setDriverPath();
-
-		getDriver().get("https://www.cleartrip.com/");
 		hotelLink.click();
 
-		localityTextBox.sendKeys("Indiranagar, Bangalore");
+		localityTextBox.sendKeys(LOCALITY);
 
 		new Select(travellerSelection).selectByVisibleText("1 room, 2 adults");
 		searchButton.click();
 
-		getDriver().quit();
+		//getDriver().quit();
 
+	}
+	@AfterTest
+	public void closeBrowser() {
+		getDriver().close();
 	}
 
 	// commented the code because created a class to instantiate the driver which
