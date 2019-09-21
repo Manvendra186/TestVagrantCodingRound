@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14268" started-at="2019-09-21T05:37:04Z" finished-at="2019-09-21T05:37:19Z">
+  <suite name="Default suite" duration-ms="18980" started-at="2019-09-21T05:46:01Z" finished-at="2019-09-21T05:46:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14268" started-at="2019-09-21T05:37:04Z" finished-at="2019-09-21T05:37:19Z">
-      <class name="FlightBookingTest">
-        <test-method status="PASS" signature="navigateToClearTrip()[pri:0, instance:FlightBookingTest@6221a451]" name="navigateToClearTrip" is-config="true" duration-ms="6953" started-at="2019-09-21T11:07:04Z" finished-at="2019-09-21T11:07:11Z">
+    <test name="Default test" duration-ms="18980" started-at="2019-09-21T05:46:01Z" finished-at="2019-09-21T05:46:20Z">
+      <class name="HotelBookingTest">
+        <test-method status="PASS" signature="navigateToClearTrip()[pri:0, instance:HotelBookingTest@2eae8e6e]" name="navigateToClearTrip" is-config="true" duration-ms="7258" started-at="2019-09-21T11:16:01Z" finished-at="2019-09-21T11:16:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToClearTrip -->
-        <test-method status="PASS" signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:FlightBookingTest@6221a451]" name="testThatResultsAppearForAOneWayJourney" duration-ms="6817" started-at="2019-09-21T11:07:11Z" finished-at="2019-09-21T11:07:18Z">
+        <test-method status="PASS" signature="shouldBeAbleToSearchForHotels()[pri:0, instance:HotelBookingTest@2eae8e6e]" name="shouldBeAbleToSearchForHotels" duration-ms="7510" started-at="2019-09-21T11:16:08Z" finished-at="2019-09-21T11:16:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FlightBookingTest@6221a451]" name="closeBrowser" is-config="true" duration-ms="454" started-at="2019-09-21T11:07:18Z" finished-at="2019-09-21T11:07:19Z">
+        </test-method> <!-- shouldBeAbleToSearchForHotels -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:HotelBookingTest@2eae8e6e]" name="closeBrowser" is-config="true" duration-ms="4177" started-at="2019-09-21T11:16:16Z" finished-at="2019-09-21T11:16:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- FlightBookingTest -->
+      </class> <!-- HotelBookingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

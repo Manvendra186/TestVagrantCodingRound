@@ -1,3 +1,6 @@
 1:- Created a separate  package/class for Utility, Driver instantiation.
 2:- Created a separate package/class for a page object model like design pattern to create  object repository for web elements.
-3:- Removed the provided code in the SignInTest class but commented the unnecessary code provided in other test classes.
+3:- Removed/commented the provided code in the given test classes.
+4:- Created an Interface for constants
+5:- Tested all the 3 test cases, which have been passed successfully
+6:- Added javadoc comments to methods and classes for better understanding of the code.

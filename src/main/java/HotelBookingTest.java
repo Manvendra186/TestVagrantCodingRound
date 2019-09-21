@@ -1,14 +1,12 @@
-import com.utility.Constants;
-import com.utility.DriverInstance;
+import com.utility.*;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-public class HotelBookingTest extends DriverInstance implements Constants{
+import org.testng.annotations.*;
+
+public class HotelBookingTest extends DriverInstance implements Constants {
 
 	@FindBy(linkText = "Hotels")
 	private WebElement hotelLink;
@@ -22,11 +20,16 @@ public class HotelBookingTest extends DriverInstance implements Constants{
 	@FindBy(id = "travellersOnhome")
 	private WebElement travellerSelection;
 
+	public HotelBookingTest() {
+		PageFactory.initElements(getDriver(), this);
+	}
+
 	@BeforeTest
 	public void navigateToClearTrip() {
 		getDriver().get(URL);
 		getDriver().manage().window().maximize();
 	}
+
 	@Test
 	public void shouldBeAbleToSearchForHotels() {
 		// setDriverPath();
@@ -37,9 +40,10 @@ public class HotelBookingTest extends DriverInstance implements Constants{
 		new Select(travellerSelection).selectByVisibleText("1 room, 2 adults");
 		searchButton.click();
 
-		//getDriver().quit();
+		// getDriver().quit();
 
 	}
+
 	@AfterTest
 	public void closeBrowser() {
 		getDriver().close();

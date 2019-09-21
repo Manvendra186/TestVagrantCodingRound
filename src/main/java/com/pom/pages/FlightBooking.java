@@ -25,9 +25,7 @@ public class FlightBooking {
 	By destinationList = By.id("ui-id-2");
 	By destinationListOptions = By.tagName("li");
 	
-	
 	public By searchSummary = By.className("searchSummary");
-	
 
 	WebDriver driver;
 
